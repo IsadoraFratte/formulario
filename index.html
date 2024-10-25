@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Inscrição</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <h1 class="titulo">Inscrição para Vaga</h1>
+        <p class="subtitulo">Preencha o formulário para concorrer</p>
+    </div>
+
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="contato">Contato</label>
+                <input type="tel" name="contato" id="contato" required>
+            </div>
+
+            <div class="campo">
+                <label for="data">Previsão da Formatura</label>
+                <input type="date" name="data" id="data" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label>Qual segmento gostaria de estagiar?</label>
+            
+            <label>
+                <input type="radio" name="dev" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="dev" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="dev" value="fullstack">Fullstack
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="pesquisa">Onde encontrou a vaga?</label>
+            <select id="pesquisa">
+                <option selected disabled value="">Selecione</option>
+                <option>Linkedin</option>
+                <option>Google</option>
+                <option>Gupy</option>
+                <option>Outro</option>   
+            </select>
+        </div>
+
+        <fieldset>
+            <div class="campo">
+                <label>Selecione as tecnologias que desenvolve:</label>
+            </div>
+            <div class="tec">
+                <input type="checkbox" id="tec1" name="tec1" value="html">
+                <label for="tec1">HTML</label>
+    
+                <input type="checkbox" id="tec2" name="tec2" value="css">
+                <label for="tec2">CSS</label>
+    
+                <input type="checkbox" id="tec3" name="tec3" value="javascript">
+                <label for="tec3">JS</label>
+    
+                <input type="checkbox" id="tec4" name="tec4" value="python">
+                <label for="tec4">Python</label>
+    
+                <input type="checkbox" id="tec5" name="tec5" value="php">
+                <label for="tec5">PHP</label>
+    
+                <input type="checkbox" id="tec6" name="tec6" value="java">
+                <label for="tec6">Java</label>
+            </div>
+
+        </fieldset>
+
+        <div class="campo">
+            <label>Conte por que se interessou pela vaga</label>
+            <textarea row="6" style="width: 26em" id="motivo" name="motivo" required></textarea>
+        </div>
+
+        <div class="campo">
+            <label>Anexe o seu currículo</label>
+            <input type="file" required>
+        </div>
+
+        <button class="botao" type="submit">Enviar</button>
+
+    </form>
+    
+</body>
+</html>
